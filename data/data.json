@@ -1,0 +1,32 @@
+{
+	"languageArr": [
+		{ "lang": "C#", "lvl": "strong" },
+		{ "lang": "JavaScript", "lvl": "basics" },
+		{ "lang": "C++", "lvl": "basics" }
+	],
+	"portfolioItems": [
+		{
+			"item": "Trippy Viking",
+			"img": "./assets/TrippyBanner.png",
+			"descrip": "Firetail Games first production"
+		},
+		{
+			"item": "Final Tale",
+			"img": "./assets/finaltalefinalbanner.png",
+			"descrip": "Frozen mobile game"
+		},
+		{
+			"item": "Kalsarikänni",
+			"img": "./assets/TrippyBanner.png",
+			"descrip": "Latest production"
+		}
+	],
+	"projects": [
+		{
+			"name": "Portfolio",
+			"link": "https://github.com/Zan1ty/HomeSite",
+			"videoLink": "non-existent",
+			"description": "My first ever React Site"
+		}
+	]
+}

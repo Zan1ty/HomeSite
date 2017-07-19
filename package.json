@@ -1,26 +1,28 @@
 {
-  "name": "zansite",
-  "version": "1.0.0",
-  "description": "portfolio website project",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "webpack": "webpack",
-    "prettier": "prettier"
-  },
-  "author": "Zan1ty",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "jest": "^20.0.4",
-    "lodash": "^4.17.4",
-    "prettier": "^1.5.3",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-responsive-carousel": "^3.1.24",
-    "webpack": "^3.3.0"
-  }
+	"name": "zansite",
+	"version": "1.0.0",
+	"description": "portfolio website project",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"webpack": "webpack",
+		"prettier": "prettier"
+	},
+	"author": "Zan1ty",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-core": "^6.25.0",
+		"babel-loader": "^7.1.1",
+		"babel-preset-env": "^1.6.0",
+		"babel-preset-react": "^6.24.1",
+		"jest": "^20.0.4",
+		"lodash": "^4.17.4",
+		"prettier": "^1.5.3",
+		"react": "^15.6.1",
+		"react-dom": "^15.6.1",
+		"react-headroom": "^2.1.6",
+		"react-responsive-carousel": "^3.1.24",
+		"react-scroll": "^1.5.4",
+		"webpack": "^3.3.0"
+	}
 }

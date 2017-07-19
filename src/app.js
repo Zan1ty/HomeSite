@@ -1,61 +1,31 @@
 import React from 'react';
 import Carousel from './carousel';
 import SiteHeader from './siteHeader';
+import Projects from './projects';
+import Footer from './footer';
 import Languages from './languages';
+import { languageArr, portfolioItems, projects } from '../data/data';
+import { scroller } from 'react-scroll';
 
-const portfolioItems = [
-  {
-    item: 'Trippy Viking',
-    img: './assets/1.jpeg',
-    descrip: 'Firetail Games first production'
-  },
-  {
-    item: 'Final Tale',
-    img: './assets/2.jpeg',
-    descrip: 'Frozen mobile game'
-  },
-  {
-    item: 'Kalsarikänni',
-    img: './assets/3.jpeg',
-    descrip: 'Firetail Games latest game'
-  }
-];
+export default class App extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = { portfolioItems, languageArr, projects };
+	}
 
-const languageArr = [
-  {
-    lang: 'C#',
-    lvl: 'strong'
-  },
-  {
-    lang: 'javascript',
-    lvl: 'intermediate'
-  },
-  {
-    lang: 'C++',
-    lvl: 'basics'
-  }
-];
+	render() {
+		return (
+			<div>
+				<SiteHeader a_scrollToElement={this.a_scrollToElement.bind(this)} />
+				<Carousel portfolioItems={this.state.portfolioItems} />
+				<Projects projects={this.state.projects} />
+				<Languages languageArr={this.state.languageArr} />
+				<Footer />
+			</div>
+		);
+	}
 
-export default class App extends React.Component
-{
-  constructor(props){
-    super(props);
-    this.state = { portfolioItems, languageArr };
-  };
-
-  render() {
-    return(
-      <div>
-      <SiteHeader />
-      <Carousel
-      portfolioItems={this.state.portfolioItems}
-      />
-      <Languages
-      languageArr={this.state.languageArr}
-      />
-      </div>
-    );
-  };
-
-
+	a_scrollToElement(name) {
+		scroller.scrollTo(name);
+	}
 }
